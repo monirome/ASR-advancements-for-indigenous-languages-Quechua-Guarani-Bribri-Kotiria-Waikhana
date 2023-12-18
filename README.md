@@ -9,12 +9,6 @@ This repository contains the code and models for performing inference with fine-
 - `/scripts`: Contains shell scripts to build Docker images and run inference processes.
 - `/docker`: Holds the Dockerfile and associated scripts required to containerize the ASR system.
 
-## Prerequisites
-
-- Docker
-- Python 3.x
-- Required Python packages listed in `requirements.txt` (if applicable)
-
 ## Running Inference
 
 To perform inference on an audio file using the pre-trained Quechua model, execute the following command:
