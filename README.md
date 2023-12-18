@@ -4,30 +4,41 @@ This repository contains the code and models for performing inference with fine-
 
 ## Project Structure
 
-- `/data`: Contains data and pre-trained models necessary for inference.
-- `/scripts`: Contains inference scripts and other utilities.
-- `/docker`: Contains Docker-related files for containerization.
+- `/data`: This directory contains linguistic resources and pre-trained models for the Quechua language.
+  - `/...`: Includes language-specific files such as dictionaries, lexicons, sample audio files, and model checkpoints.
+- `/scripts`: Contains shell scripts to build Docker images and run inference processes.
+- `/docker`: Holds the Dockerfile and associated scripts required to containerize the ASR system.
 
-### Docker Usage
+## Prerequisites
 
-A Dockerfile is provided to containerize the inference environment. To build and run the Docker container, use the following commands:
+- Docker
+- Python 3.x
+- Required Python packages listed in `requirements.txt` (if applicable)
 
-docker build -t wav2vec2-inference .
-docker run -it --rm wav2vec2-inference
+## Running Inference
 
-## Setup
+To perform inference on an audio file using the pre-trained Quechua model, execute the following command:
 
-To set up the project, follow these steps:
+```bash
+./scripts/1_Inference.sh --input .../audio.wav
 
-1. Clone this repository:
-   
-   ```bash
-   git clone https://github.com/monirome/asr-indigenous-languages.git
+## Docker Usage
 
-2. Running Inference
+To build and run a Docker container for the ASR system:
+Run the build script:
 
-   To run inference, use the infer.py script located in the /scripts directory:
-   
-      ```bash
-   python scripts/infer.py --input your_input_file.wav`
+```bash
+./0_build_docker.sh
+
+To infer using the Docker container:
+
+```bash
+docker run -it --rm --name asr-quechua-inference wav2vec2-inference
+
+## Data and Models
+
+The data/quechua directory includes:
+
+dict.ltr.txt: Text file with the language dictionary.
+lexicon.txt: Text file with the language lexicon.
 
