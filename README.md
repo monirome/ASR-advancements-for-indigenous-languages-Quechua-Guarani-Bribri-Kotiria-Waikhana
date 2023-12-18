@@ -26,8 +26,8 @@ To set up the project, follow these steps:
 
 2. Running Inference
 
-To run inference, use the infer.py script located in the /scripts directory:
-
-   ```bash
-python scripts/infer.py --input your_input_file.wav`
+   To run inference, use the infer.py script located in the /scripts directory:
+   
+      ```bash
+   python scripts/infer.py --input your_input_file.wav`
 
