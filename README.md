@@ -20,6 +20,7 @@ docker run -it --rm wav2vec2-inference
 To set up the project, follow these steps:
 
 1. Clone this repository:
+   
    ```bash
 git clone https://github.com/monirome/asr-indigenous-languages.git
 
