@@ -4,8 +4,9 @@ This repository contains the code and models for performing inference with fine-
 
 ## Project Structure
 
-- `/scripts`: Contains shell scripts to build Docker images and run inference processes.
-- `/docker`: Holds the Dockerfile and associated scripts required to containerize the ASR system.
+- `0_build_docker.sh`: shell script to build Docker images
+- `1_Inference.sh`: sheel script to  run inference processes.
+- `/docker`: holds the dockerfile and associated scripts required to containerize the ASR system.
 
 ## Available Models
 
@@ -25,7 +26,7 @@ First, build the Docker container using the provided script. This prepares the n
 ```
 To infer using the Docker container:
 ```bash
-Docker run -it --rm --name asr-inference wav2vec2-inference
+docker run -it --rm --name asr-inference wav2vec2-inference
 ```
 Perform inference on an audio file using the following command
 ```bash
