@@ -20,14 +20,14 @@ This repository contains fine-tuned models for the Quechua, Guarani, Bribri, Kot
 ## Running Inference
 
 First, build the Docker container using the provided script. This prepares the necessary environment, including all dependencies.
-   ```bash
-   ./0_build_docker.sh
-    ```
+```bash
+./0_build_docker.sh
+```
 To infer using the Docker container:
-   ```bash
-    Docker run -it --rm --name asr-inference wav2vec2-inference
-    ```
+```bash
+Docker run -it --rm --name asr-inference wav2vec2-inference
+```
 Perform inference on an audio file using the following command
-   ```bash
-   ./scripts/1_Inference.sh --input audio_path/audio.wav
-   ```
+```bash
+./scripts/1_Inference.sh --input audio_path/audio.wav
+```
