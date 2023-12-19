@@ -6,7 +6,7 @@ RESULTS_PATH=$2
 DATA_PATH=$3
 
 # docker run command
-docker run -it --network=host --name "fairseq_inferesnces7s3s5dfsdf" --shm-size=8g --ulimit memlock=-1 \
+docker run -it --network=host --name "fairseq inference" --shm-size=8g --ulimit memlock=-1 \
 -v $PWD/data:/data/ -w /workspace/fairseq fairseq \
 python3 infer.py \
 "$DATA_PATH" \
