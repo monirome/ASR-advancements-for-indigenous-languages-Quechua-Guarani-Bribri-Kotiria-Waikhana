@@ -7,6 +7,7 @@ This repository contains the code and models for performing inference with fine-
 - `0_build_docker.sh`: shell script to build Docker images
 - `1_Inference.sh`: sheel script to  run inference processes.
 - `/docker`: holds the dockerfile and associated scripts required to containerize the ASR system.
+- `/data`: .. 
 
 ## Available Models
 
@@ -23,10 +24,6 @@ This repository contains fine-tuned models for the Quechua, Guarani, Bribri, Kot
 First, build the Docker container using the provided script. This prepares the necessary environment, including all dependencies.
 ```bash
 ./0_build_docker.sh
-```
-To infer using the docker container:
-```bash
-docker run -it --rm --name {CONTAINER_NAME} {IMAGE_NAME}
 ```
 Perform inference on an audio file using the following command:
 ```bash
