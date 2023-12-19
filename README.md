@@ -9,6 +9,24 @@ This repository contains the code and models for performing inference with fine-
 - `/scripts`: Contains shell scripts to build Docker images and run inference processes.
 - `/docker`: Holds the Dockerfile and associated scripts required to containerize the ASR system.
 
+## Available Models
+
+### Quechua
+[Download Quechua Model](https://data.mendeley.com/datasets/b3pnppjpf9/1)
+
+### Guaraní
+[Download Guaraní Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
+
+### Bribri
+[Download Bribri Model](https://data.mendeley.com/datasets/8dn49kxpz5/1)
+
+### Kotiria
+[Download Kotiria Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
+*Note: Please verify if the link is correct, as it appears to be the same as the Guaraní model link.*
+
+### Wa'ikhana
+[Download Wa'ikhana Model](https://data.mendeley.com/datasets/yczy43n594/1)
+
 ## Running Inference
 
 To perform inference on an audio file using the pre-trained Quechua model, execute the following command:
@@ -28,22 +46,3 @@ To infer using the Docker container:
 
 ```bash
 docker run -it --rm --name asr-quechua-inference wav2vec2-inference
-
-## Available Models
-
-### Quechua
-[Download Quechua Model](https://data.mendeley.com/datasets/b3pnppjpf9/1)
-
-### Guaraní
-[Download Guaraní Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
-
-### Bribri
-[Download Bribri Model](https://data.mendeley.com/datasets/8dn49kxpz5/1)
-
-### Kotiria
-[Download Kotiria Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
-*Note: Please verify if the link is correct, as it appears to be the same as the Guaraní model link.*
-
-### Wa'ikhana
-[Download Wa'ikhana Model](https://data.mendeley.com/datasets/yczy43n594/1)
-
