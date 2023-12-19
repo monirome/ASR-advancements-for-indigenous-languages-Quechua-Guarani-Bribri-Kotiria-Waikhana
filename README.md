@@ -26,7 +26,7 @@ First, build the Docker container using the provided script. This prepares the n
 ```
 To infer using the Docker container:
 ```bash
-docker run -it --rm --name asr-inference wav2vec2-inference
+docker run -it --rm --name {CONTAINER_NAME} {IMAGE_NAME}
 ```
 Perform inference on an audio file using the following command
 ```bash
