@@ -27,5 +27,5 @@ First, build the Docker container using the provided script. This prepares the n
 ```
 Perform inference for the Bribri language using the provided command:
 ```bash
-./2_infer_prueba.sh /data/bribri/bribri_model.pt /data/bribri/transcriptions/ /data/bribri/
+./1_Inference.sh /data/bribri/bribri_model.pt /data/bribri/transcriptions/ /data/bribri/
 ```
