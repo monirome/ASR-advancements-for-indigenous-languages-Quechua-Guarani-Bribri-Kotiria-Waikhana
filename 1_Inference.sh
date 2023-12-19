@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Define the base directory for data and model
-DATA_DIR="./audio_path"
-MODEL_NAME="{language}_model.pt"
-RESULTS_DIR="./transcriptions"
+# arguments
+PATH_MODEL=$1
+RESULTS_PATH=$2
+DATA_PATH=$3
 
-# Docker command to run inference
-docker run -it --network=host --name "fairseq_inference" --shm-size=8g --ulimit memlock=-1 \
--v $PWD/$DATA_DIR: -w /workspace/fairseq fairseq \
+# docker run command
+docker run -it --network=host --name "fairseq_inferesnces7s3s5dfsdf" --shm-size=8g --ulimit memlock=-1 \
+-v $PWD/data:/data/ -w /workspace/fairseq fairseq \
 python3 infer.py \
-/data/ \
+"$DATA_PATH" \
 --gen-subset "test" \
---path "/data/$MODEL_NAME" \
---results-path "/data/$RESULTS_DIR/" \
+--path "$PATH_MODEL" \
+--results-path "$RESULTS_PATH" \
 --w2l-decoder viterbi \
 --scoring wer \
 --batch-size 1 \
@@ -26,3 +26,4 @@ python3 infer.py \
 --min-sample-size 16000 \
 --eval-wer \
 --cpu
+
