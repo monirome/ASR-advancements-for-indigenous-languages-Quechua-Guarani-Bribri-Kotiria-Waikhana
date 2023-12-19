@@ -31,8 +31,6 @@ docker run -it --rm --name asr-quechua-inference wav2vec2-inference
 
 ## Data and Models
 
-The data/quechua directory includes:
+The linguistic resources and pre-trained models required to run this ASR system are available for download at the following Mendeley Data link:
 
-dict.ltr.txt: Text file with the language dictionary.
-lexicon.txt: Text file with the language lexicon.
-
+[Mendeley Data URL for Quechua](https://data.mendeley.com/datasets/b3pnppjpf9/1)
