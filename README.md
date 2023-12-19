@@ -30,5 +30,5 @@ docker run -it --rm --name {CONTAINER_NAME} {IMAGE_NAME}
 ```
 Perform inference on an audio file using the following command:
 ```bash
-./scripts/1_Inference.sh --input audio_path/audio.wav
+./1_Inference.sh --input audio_path/audio.wav
 ```
