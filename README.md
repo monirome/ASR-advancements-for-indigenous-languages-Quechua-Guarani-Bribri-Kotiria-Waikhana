@@ -12,11 +12,11 @@ This repository contains the code and models for performing inference with fine-
 ## Data Folder Contents
 Each language folder within data typically includes the following files:
 
-- audio_file.wav: Audio file for ASR processing.
-- dict.ltr.txt: Text file with the lexicon in letter format.
-- lexicon.txt: Text file with the full lexicon.
-- test.ltr: Test file with letter transcriptions.
-- test.tsv: TSV file with test data.
+- `audio_file.wav`: Audio file for ASR processing.
+- `dict.ltr.txt`: Text file with the lexicon in letter format.
+- `lexicon.txt`: Text file with the full lexicon.
+- `test.ltr`: Test file with letter transcriptions.
+- `test.tsv`: TSV file with test data.
 
 
 ## Available Models
