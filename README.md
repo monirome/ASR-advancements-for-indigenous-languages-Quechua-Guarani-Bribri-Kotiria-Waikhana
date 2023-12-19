@@ -7,7 +7,6 @@ This repository contains the code and models for performing inference with fine-
 - `0_build_docker.sh`: shell script to build Docker images
 - `1_Inference.sh`: sheel script to  run inference processes.
 - `/docker`: holds the dockerfile and associated scripts required to containerize the ASR system.
-- `/data`: .. 
 
 ## Available Models
 
