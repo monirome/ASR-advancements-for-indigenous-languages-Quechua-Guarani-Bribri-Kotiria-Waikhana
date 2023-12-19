@@ -7,6 +7,17 @@ This repository contains the code and models for performing inference with fine-
 - `0_build_docker.sh`: shell script to build Docker images
 - `1_Inference.sh`: sheel script to  run inference processes.
 - `/docker`: holds the dockerfile and associated scripts required to containerize the ASR system.
+- `/data`: Contains language data folders and associated files for inference processing.
+
+## Data Folder Contents
+Each language folder within data typically includes the following files:
+
+- audio_file.wav: Audio file for ASR processing.
+- dict.ltr.txt: Text file with the lexicon in letter format.
+- lexicon.txt: Text file with the full lexicon.
+- test.ltr: Test file with letter transcriptions.
+- test.tsv: TSV file with test data.
+
 
 ## Available Models
 
