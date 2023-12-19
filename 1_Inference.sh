@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define the base directory for data and model
-DATA_DIR="./data"
+DATA_DIR="./audio_path"
 MODEL_NAME="{language}_model.pt"
 RESULTS_DIR="./transcriptions"
 
 # Docker command to run inference
 docker run -it --network=host --name "fairseq_inference" --shm-size=8g --ulimit memlock=-1 \
--v $PWD/$DATA_DIR:/data/ -w /workspace/fairseq fairseq \
+-v $PWD/$DATA_DIR: -w /workspace/fairseq fairseq \
 python3 infer.py \
 /data/ \
 --gen-subset "test" \
@@ -26,4 +26,3 @@ python3 infer.py \
 --min-sample-size 16000 \
 --eval-wer \
 --cpu
-
