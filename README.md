@@ -25,7 +25,7 @@ First, build the Docker container using the provided script. This prepares the n
 ```bash
 ./0_build_docker.sh
 ```
-Perform inference on an audio file using the following command:
+Perform inference for the Bribri language using the provided command:
 ```bash
-./1_Inference.sh --input /audio.wav
+./2_infer_prueba.sh /data/bribri/bribri_model.pt /data/bribri/transcriptions/ /data/bribri/
 ```
