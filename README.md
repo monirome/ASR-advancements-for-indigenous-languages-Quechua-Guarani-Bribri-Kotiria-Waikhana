@@ -29,12 +29,21 @@ To infer using the Docker container:
 ```bash
 docker run -it --rm --name asr-quechua-inference wav2vec2-inference
 
-## Data and Models
+## Available Models
 
-The linguistic resources and pre-trained models required to run this ASR system for each language are available for download at the following Mendeley Data links:
+### Quechua
+[Download Quechua Model](https://data.mendeley.com/datasets/b3pnppjpf9/1)
 
-[Mendeley Data URL for Quechua](https://data.mendeley.com/datasets/b3pnppjpf9/1)
-[Mendeley Data URL for Guarani](https://data.mendeley.com/datasets/xd3h454tvd/1)
-[Mendeley Data URL for Bribri](https://data.mendeley.com/datasets/8dn49kxpz5/1)
-[Mendeley Data URL for Kotiria](https://data.mendeley.com/datasets/xd3h454tvd/1)
-[Mendeley Data URL for Wa'ikhana](https://data.mendeley.com/datasets/yczy43n594/1)
+### Guaraní
+[Download Guaraní Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
+
+### Bribri
+[Download Bribri Model](https://data.mendeley.com/datasets/8dn49kxpz5/1)
+
+### Kotiria
+[Download Kotiria Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
+*Note: Please verify if the link is correct, as it appears to be the same as the Guaraní model link.*
+
+### Wa'ikhana
+[Download Wa'ikhana Model](https://data.mendeley.com/datasets/yczy43n594/1)
+
