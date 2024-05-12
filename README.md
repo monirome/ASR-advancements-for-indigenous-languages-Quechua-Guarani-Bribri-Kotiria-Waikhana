@@ -23,7 +23,7 @@ Each language folder within data typically includes the following files:
 
 This repository contains fine-tuned models for the Quechua, Guarani, Bribri, Kotiria, and Wa'ikhana languages, which are necessary for running inferences. These models are available for download at the following Mendeley Data links:
 
-- Quechua: [Download Quechua Model](https://data.mendeley.com/datasets/b3pnppjpf9/1)
+- Quechua: [Download Quechua Model](https://data.mendeley.com/datasets/b3pnppjpf9/3)
 - Guarani: [Download Guarani Model](https://data.mendeley.com/datasets/hcw7vhydpv/1)
 - Bribri: [Download Bribri Model](https://data.mendeley.com/datasets/8dn49kxpz5/1)
 - Kotiria: [Download Kotiria Model](https://data.mendeley.com/datasets/xd3h454tvd/1)
